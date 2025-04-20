@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cool Blog</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muzammil's Viral News Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -15,87 +14,61 @@
     }
 
     body {
-      background: linear-gradient(to right, #c2e9fb, #a1c4fd);
-      color: #333;
-      line-height: 1.6;
+      background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+      padding: 2rem;
+      color: #222;
     }
 
     header {
-      background-color: #ffffffcc;
-      backdrop-filter: blur(5px);
-      padding: 1.5rem;
       text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 3rem;
     }
 
     header h1 {
-      font-size: 2.5rem;
-      color: #0066cc;
+      font-size: 3rem;
+      background: linear-gradient(to right, #ff512f, #dd2476);
+      -webkit-background-clip: text;
+      color: transparent;
     }
 
     .container {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
-    .post {
-      background: #ffffffcc;
-      border-radius: 12px;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
-      transition: transform 0.3s ease;
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .post:hover {
-      transform: translateY(-5px);
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 30px rgba(0,0,0,0.15);
     }
 
-    .post h2 {
-      color: #00509e;
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
     }
 
-    .post p {
-      margin-top: 0.5rem;
+    .card-content {
+      padding: 1.2rem;
     }
 
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #ffffffcc;
-      backdrop-filter: blur(5px);
-      color: #555;
-      margin-top: 4rem;
+    .card-content h2 {
+      font-size: 1.3rem;
+      color: #ff4e50;
+      margin-bottom: 0.5rem;
     }
-  </style>
-</head>
 
-<body>
-  <header>
-    <h1>Muzammil's Cool Blog</h1>
-  </header>
-
-  <div class="container">
-    <div class="post">
-      <h2>Welcome to My Blog!</h2>
-      <p>Hey there! This is my very first post. Stay tuned for cool stuff about design, life, and learning.</p>
-    </div>
-
-    <div class="post">
-      <h2>Tips to Stay Productive</h2>
-      <p>Sometimes it's hard to focus, but with a few tricks and breaks, you can stay on top of your game!</p>
-    </div>
-
-    <div class="post">
-      <h2>Why Blue is the Coolest Color</h2>
-      <p>Blue tones calm the mind and soothe the soul. No wonder it's a favorite among creatives.</p>
-    </div>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 Muzammil's Blog | All Rights Reserved</p>
-  </footer>
-</body>
-
-</html>
+    .card-content p {
+      font-size: 0.95rem;
+      color: #444;
+    }
